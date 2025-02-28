@@ -39,8 +39,8 @@ jobs:
           bundle install
       - name: Install Python dependencies
         run: |
-          python -m venv venv  # Create virtual environment
-          source venv/bin/activate  # Activate the virtual environment
+          # python -m venv venv  # Create virtual environment
+          # source venv/bin/activate  # Activate the virtual environment
           pip install -r scripts/requirements.txt  # Install Python packages
 
       - name: Execute conversion script
